@@ -13,3 +13,8 @@ type grade = {
     mathematics:string,
     german:string 
 }
+
+type StudentRemarks = {
+    studentRemark: boolean
+    changeStudentRemarks: ()=>void
+}
