@@ -1,4 +1,5 @@
 import './App.css';
+import FavoriteSubjects from './components/FavoriteSubjects';
 import Login from './components/Login';
 import Register from './components/Register';
 import StudentProfile from './components/StudentProfile';
@@ -11,6 +12,7 @@ function App() {
       <StudentContext/>
       <Login/>
       <Register/>
+      <FavoriteSubjects/>
     </div>
   );
 }
