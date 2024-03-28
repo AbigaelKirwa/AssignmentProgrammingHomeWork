@@ -8,6 +8,17 @@ const user = {
   img_source:"https://thispersondoesnotexist.com/"
 }
 
+//creating a list
+const subjects =[
+    {name:"English", id:1},
+    {name:"Kiswahili", id:2},
+    {name:"Science", id:3}
+]
+
+const listItems = subjects.map((subject)=>{
+  return <li key={subject.id} style={{listStyle:'none'}}>{subject.name}</li>
+})
+
 function App() {
     //conditional rendering
     const [count, setCount] = useState(0)
@@ -30,6 +41,11 @@ function App() {
   return (
     <div className="App">
       <UserData/>
+      <div className='subject_data'>
+        <h1>Subject List</h1>
+          {listItems}
+      </div>
+
     </div>
   );
 }
