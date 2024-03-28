@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+
+//creating a component and nesting
+function UserData(){
+  return(
+    <>
+      <h1>User Details</h1>
+      <p>Name: Abigael Kirwa Chemutai</p>
+      <button >Click Me!</button>
+    </>
+  )
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserData/>
     </div>
   );
 }
