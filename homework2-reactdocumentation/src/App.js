@@ -5,7 +5,8 @@ function UserData(){
   return(
     <>
       <h1>User Details</h1>
-      <p>Name: Abigael Kirwa Chemutai</p>
+      <p>Name: John Doe <br/>Jane Doe</p>
+      <img src='https://thispersondoesnotexist.com/'/>
       <button >Click Me!</button>
     </>
   )
