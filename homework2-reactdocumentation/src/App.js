@@ -22,6 +22,11 @@ const listItems = subjects.map((subject)=>{
 function App() {
     //conditional rendering
     const [count, setCount] = useState(0)
+
+    //event response
+    function eventHandlerFunction() {
+      prompt("Subject name")
+    }
     
     //creating a component and nesting
     function UserData(){
@@ -43,7 +48,8 @@ function App() {
       <UserData/>
       <div className='subject_data'>
         <h1>Subject List</h1>
-          {listItems}
+        {listItems}
+        <button onClick={eventHandlerFunction}>Enter A new Subject</button>
       </div>
 
     </div>
