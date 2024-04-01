@@ -44,6 +44,7 @@ function App() {
           <img className='user_image' src={user.img_source} alt='person'/>
           : null}
           <button onClick={()=>{setCount(count+1)}}>Click Me! {count}</button>
+          <button onClick={()=>{setCount(count+1)}}>Click Me! {count}</button>
         </div>
       )
     }
