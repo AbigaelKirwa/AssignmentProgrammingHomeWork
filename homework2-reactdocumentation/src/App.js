@@ -8,24 +8,29 @@ const user = {
   img_source:"https://thispersondoesnotexist.com/"
 }
 
-//creating a list
-const subjects =[
-    {name:"English", id:1},
-    {name:"Kiswahili", id:2},
-    {name:"Science", id:3}
-]
-
-const listItems = subjects.map((subject)=>{
-  return <li key={subject.id} style={{listStyle:'none'}}>{subject.name}</li>
-})
 
 function App() {
     //conditional rendering
     const [count, setCount] = useState(0)
+    //creating a list
+    const [subjects, setSubjects] = useState([
+      {name:"English", id:1},
+      {name:"Kiswahili", id:2},
+      {name:"Science", id:3}
+    ])
+
+    const listItems = subjects.map((subject)=>{
+    return <li key={subject.id} style={{listStyle:'none'}}>{subject.name}</li>
+    })
 
     //event response
     function eventHandlerFunction() {
-      prompt("Subject name")
+      const subjectName =prompt("Subject name")
+      if(subjectName){
+        const newSubjectName = {name:subjectName, id:(subjects.id-1)+1}
+        setSubjects([...subjects, newSubjectName])
+      }
+
     }
     
     //creating a component and nesting
@@ -46,10 +51,10 @@ function App() {
   return (
     <div className="App">
       <UserData/>
-      <div className='subject_data'>
+      <div className='subject_data' style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
         <h1>Subject List</h1>
         {listItems}
-        <button onClick={eventHandlerFunction}>Enter A new Subject</button>
+        <button onClick={eventHandlerFunction} style={{width:"20%", marginTop:"1%"}}>Enter A new Subject</button>
       </div>
 
     </div>
