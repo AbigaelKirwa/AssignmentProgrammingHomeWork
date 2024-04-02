@@ -5,6 +5,7 @@ import PassingWithContext from './components/PassingWithContext';
 import PreservingState from './components/PreservingState';
 import QuickStart from './components/QuickStart';
 import ReactingToInput from './components/ReactingToInput';
+import ReducerAndContext from './components/ReducerAndContext';
 import SharingState from './components/SharingState';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <SharingState/> */}
       {/* <PreservingState/> */}
       {/* <ExtractingStateLogic/> */}
-      <PassingWithContext/>
+      {/* <PassingWithContext/> */}
+      <ReducerAndContext/>
     </div>
   );
 }
