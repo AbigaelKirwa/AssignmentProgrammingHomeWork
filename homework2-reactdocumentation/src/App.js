@@ -1,5 +1,6 @@
 import './App.css';
 import ChoosingStateStructure from './components/ChoosingStateStructure';
+import PreservingState from './components/PreservingState';
 import QuickStart from './components/QuickStart';
 import ReactingToInput from './components/ReactingToInput';
 import SharingState from './components/SharingState';
@@ -11,7 +12,8 @@ function App() {
       {/* <QuickStart/> */}
       {/* <ReactingToInput/> */}
       {/* <ChoosingStateStructure/> */}
-      <SharingState/>
+      {/* <SharingState/> */}
+      <PreservingState/>
     </div>
   );
 }
