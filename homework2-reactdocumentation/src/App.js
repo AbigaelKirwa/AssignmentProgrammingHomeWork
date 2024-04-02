@@ -2,6 +2,7 @@ import './App.css';
 import ChoosingStateStructure from './components/ChoosingStateStructure';
 import QuickStart from './components/QuickStart';
 import ReactingToInput from './components/ReactingToInput';
+import SharingState from './components/SharingState';
 
 function App() {
     
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       {/* <QuickStart/> */}
       {/* <ReactingToInput/> */}
-    <ChoosingStateStructure/>
+      {/* <ChoosingStateStructure/> */}
+      <SharingState/>
     </div>
   );
 }
